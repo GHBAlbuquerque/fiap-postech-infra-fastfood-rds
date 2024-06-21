@@ -10,4 +10,5 @@ resource "aws_db_instance" "fiap_postech_db" {
   parameter_group_name = "default.mysql8.0"
   skip_final_snapshot  = true
   multi_az             = false
+  vpc_security_group_ids = [var.default_sg_id, var.cluster_sg_id]
 }
