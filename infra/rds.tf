@@ -1,6 +1,6 @@
-resource "aws_db_instance" "clientes_db" {
+resource "aws_db_instance" "fiap_postech_db" {
   allocated_storage    = 10
-  db_name              = "clientes_db"
+  db_name              = "fiap_postech_db"
   engine               = "mysql"
   engine_version       = "8.0"
   instance_class       = "db.t3.micro"
