@@ -1,6 +1,6 @@
 resource "aws_db_instance" "fiap_postech_db" {
   allocated_storage    = 10
-  identifier           = "fiap_postech_db"
+  identifier           = "fiap-postech-db"
   db_name              = "clientes_db"
   engine               = "mysql"
   engine_version       = "8.0"
